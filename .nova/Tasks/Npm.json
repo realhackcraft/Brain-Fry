@@ -1,0 +1,12 @@
+{
+  "actions" : {
+    "run" : {
+      "postActions" : [
+        {
+          "script" : "node index.js",
+          "type" : "runScript"
+        }
+      ]
+    }
+  }
+}

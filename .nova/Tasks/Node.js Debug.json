@@ -1,0 +1,31 @@
+{
+  "actions" : {
+    "build" : {
+      "postActions" : [
+        {
+          "script" : "node index.js > output.js",
+          "type" : "runScript"
+        }
+      ]
+    },
+    "run" : {
+      "postActions" : [
+        {
+          "script" : "node ",
+          "type" : "runScript"
+        }
+      ]
+    }
+  },
+  "buildBeforeRunning" : true,
+  "extension" : {
+    "identifier" : "panic.JavaScript",
+    "name" : "JavaScript"
+  },
+  "extensionTemplate" : "nodeDebug",
+  "extensionValues" : {
+    "request" : "launch",
+    "scriptPath" : "index.js"
+  },
+  "openLogOnRun" : "start"
+}
